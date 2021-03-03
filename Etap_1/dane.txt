@@ -7,8 +7,17 @@
 
 
 - Kino
-- 
-- 1.Użytkownik niezalogowany, 2.Użytkownik zalogowany, 3.Pracownik
-- Front-end - ??, Back-end - Java/Spring? - Baza MySql
-- 
+- Dodawanie seansów, sprzedaż/kupno biletów.
+- Kategorie użytkowników:
+  1.Użytkownik niezalogowany
+  2.Użytkownik zalogowany
+  3.Pracownik
+  4.Administrator
+- Technologie:
+  Front-end - HTML
+  Back-end - Spring Java/Spring?
+  Baza danych - MySql
+- Zespół:
+  Krzysztof Dulęba, krzysztofd1103@gmail.com
+  Piotr Czajkowski, 
 - 
