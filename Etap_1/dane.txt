@@ -1,0 +1,6 @@
+# uzgodniony z prowadzącym temat,
+# zakres projektu, czyli opisać jaka będzie funkcjonalność opracowanego systemu,
+# kategorie użytkowników i ich funkcjonalności,
+# wykorzystywane technologie (front-end, back-end, baza danych),
+# skład zespół (imiona, nazwiska i adresy e-mail) oraz podział prac,
+# dla każdego studenta należy podać zrealizowany temat z przedmiotów: "Inżynieria systemów informacyjnych", "Podstawy inżynierii programowania" / "Inżynieria programowania" oraz temat pracy inżynierskiej (jeżeli został już wybrany),
