@@ -23,7 +23,9 @@ Użytkownik zalogowany:
 -Zakup biletu na seans filmowy
 
 Pracownik:
--Sprzedaż biletu,popcornu/napoju.
+-obsługa prostego systemu sprzedażowego biletów(uwzględnienie liczby miejsc, zajetych miejsc przez rezerwacje online,
+wybor miejsc, ewentualne rabaty*)
+- obsługa prostego systemu sprzedażowego artykułów spożywczych/napojów.
 -Sprawdzanie grafiku
 
 - Technologie:
@@ -33,3 +35,4 @@ Pracownik:
 - Zespół:
   Krzysztof Dulęba, krzysztofd1103@gmail.com - użytkownik
   Piotr Czajkowski, pczajkowski9@gmail.com - administrator
+  Rafał Sochacki, sochackirafal98@gmail.com - pracownik
