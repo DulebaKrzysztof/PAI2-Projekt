@@ -16,7 +16,7 @@
 
 Administrator:
 -Dodawanie/usuwanie pracownika do bazy
--Dodawanie seansu: od 01-12-2021 do 01-01-2021 "Batman nigdy" 
+-Dodawanie/usuwanie seansów
 
 Użytkownik zalogowany:
 -Przeglądanie seansów
@@ -28,9 +28,8 @@ Pracownik:
 
 - Technologie:
   Front-end - HTML
-  Back-end - Spring Java/Spring?
+  Back-end - Spring
   Baza danych - MySql
 - Zespół:
-  Krzysztof Dulęba, krzysztofd1103@gmail.com
-  Piotr Czajkowski, pczajkowski9@gmail.com
-- 
+  Krzysztof Dulęba, krzysztofd1103@gmail.com - użytkownik
+  Piotr Czajkowski, pczajkowski9@gmail.com - administrator
