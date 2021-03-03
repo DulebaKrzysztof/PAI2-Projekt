@@ -13,11 +13,24 @@
   2.Użytkownik zalogowany
   3.Pracownik
   4.Administrator
+
+Administrator:
+-Dodawanie/usuwanie pracownika do bazy
+-Dodawanie seansu: od 01-12-2021 do 01-01-2021 "Batman nigdy" 
+
+Użytkownik zalogowany:
+-Przeglądanie seansów
+-Zakup biletu na seans filmowy
+
+Pracownik:
+-Sprzedaż biletu,popcornu/napoju.
+-Sprawdzanie grafiku
+
 - Technologie:
   Front-end - HTML
   Back-end - Spring Java/Spring?
   Baza danych - MySql
 - Zespół:
   Krzysztof Dulęba, krzysztofd1103@gmail.com
-  Piotr Czajkowski, 
+  Piotr Czajkowski, pczajkowski9@gmail.com
 - 
