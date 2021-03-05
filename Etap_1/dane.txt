@@ -1,3 +1,5 @@
+ ROZSZERZYĆ OPISY!
+
 Temat:
 - Kino
 
@@ -19,6 +21,10 @@ Użytkownik zalogowany:
 -Przeglądanie seansów
 -Zakup biletu na seans filmowy
 
+Użytkownik nie zalogowany:
+-Przeglądanie seansów
+-cos co roni nie zalogowany
+
 Pracownik:
 -obsługa prostego systemu sprzedażowego biletów(uwzględnienie liczby miejsc, zajetych miejsc przez rezerwacje online,
 wybor miejsc, ewentualne rabaty*)
@@ -26,7 +32,7 @@ wybor miejsc, ewentualne rabaty*)
 -Sprawdzanie grafiku
 
 - Technologie:
-  Front-end - HTML
+  Front-end - HTML, CSS, JS
   Back-end - Spring
   Baza danych - MySql
 - Zespół:
