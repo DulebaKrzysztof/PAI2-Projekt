@@ -1,6 +1,11 @@
-Kino:
-- Dodawanie seansów, sprzedaż/kupno biletów.
+Temat:
+- Kino
+
+Funkcjonalności:
+- Dodawanie, usuwanie seansów, sprzedaż/kupno biletów.
 - Kategorie użytkowników:
+
+Rodzaje użytkowników:
   1.Użytkownik niezalogowany
   2.Użytkownik zalogowany
   3.Pracownik
