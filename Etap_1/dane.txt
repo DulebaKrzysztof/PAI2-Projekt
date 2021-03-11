@@ -4,26 +4,29 @@ Temat:
 - Kino
 
 Funkcjonalności:
-- Dodawanie, usuwanie seansów, sprzedaż/kupno biletów.
-- Kategorie użytkowników:
+- Rejestracja i logowanie dla użytkowników
+- Dodawanie, usuwanie seansów
+- Sprzedaż/kupno biletów
+- Zwroty biletów
 
 Rodzaje użytkowników:
-  1.Użytkownik niezalogowany
-  2.Użytkownik zalogowany
-  3.Pracownik
-  4.Administrator
+  1.Użytkownik niezalogowany, użytkownik zalogowany
+  2.Pracownik
+  3.Administrator
 
 Administrator:
 -Dodawanie/usuwanie pracownika do bazy
 -Dodawanie/usuwanie seansów
 
-Użytkownik zalogowany:
--Przeglądanie seansów
--Zakup biletu na seans filmowy
+Użytkownik niezalogowany:
+- Tworzenie konta
+- Logowanie na konto
+- Przeglądanie seansów
 
-Użytkownik nie zalogowany:
--Przeglądanie seansów
--cos co roni nie zalogowany
+Użytkownik zalogowany:
+- Przeglądanie seansów
+- Zakup biletu na seans
+- Zwrot biletu
 
 Pracownik:
 -obsługa prostego systemu sprzedażowego biletów(uwzględnienie liczby miejsc, zajetych miejsc przez rezerwacje online,
