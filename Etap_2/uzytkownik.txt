@@ -1,0 +1,41 @@
+Przypadki użycia dla użytkownika (Krzysztof Dulęba)
+
+1.Logowanie
+Aktorzy: użytkownik niezalogowany.
+Opis: użytkownik niezalogowany loguje się na konto korzystając z odpowiedniego formularza.
+Podstawowy przebieg zdarzeń: użytkownik wpisuje prawidłowe dane w formularzu i za pomocą przycisku loguje się na swoje konto.
+Alternatywny przebieg zdarzeń: użytkownik wpisuje nieprawidłowe dane i otrzymuje komunikat błędu.
+Wyzwalacz: użytkownik wybiera opcje logowania na stronie.
+Wymagania wstępne: użytkownik musi posiadać konto, żeby się na nie zalogować.
+
+2.Tworzenie konta
+Aktorzy: użytkownik niezalogowany.
+Opis: użytkownik niezalogowany rejestruje swoje konto korzystając z odpowiedniego formularza.
+Podstawowy przebieg zdarzeń: użytkownik wypełnia formularz dane w formularzu i za pomocą przycisku loguje się na swoje konto.
+Alternatywny przebieg zdarzeń: użytkownik podał w formularzu dane, które nie przechodzą poprawnej walidacji, więc użytkownik dostaje komunikat błędu i konto nie jest tworzone.
+Wyzwalacz: użytkownik wybiera opcje utworzenia na stronie.
+Wymagania wstępne: brak.
+
+3.Przeglądanie dostępnych seansów
+Aktorzy: użytkownik niezalogowany lub użytkownik zalogowany.
+Opis: użytkownik zalogowany / użytkownik niezalogowany przechodzi do podstrony pozwalającej na przeglądanie danych o dostępnych seansach w kinie.
+Podstawowy przebieg zdarzeń: użytkownik przechodzi do właściwej podstrony i pokazują mu się dostępne seanse.
+Alternatywny przebieg zdarzeń: brak.
+Wyzwalacz: użytkownik wybiera opcje przejścia do podstrony z seansami.
+Wymagania wstępne: brak.
+
+4.Zakup biletu
+Aktorzy: użytkownik zalogowany.
+Opis: użytkownik zalogowany wybiera opcje zakupu biletu na interesujący go seans, wypełnia wszystkie pola, wysyła formularz i płaci za bilet.
+Podstawowy przebieg zdarzeń: użytkownik pomyślnie dokonuje rezerwacji i opłaty biletu.
+Alternatywny przebieg zdarzeń: użytkownik dostaje informacje o błędzie i nie dochodzi do zakupu w momencie gdy nie ma już wolnych miejsc na dany seans.
+Wyzwalacz: użytkownik wybiera opcje związaną z zakupem biletu.
+Wymagania wstępne: brak.
+
+5.Anulacja zakupu biletu
+Aktorzy: użytkownik zalogowany.
+Opis: użytkownik zalogowany wybiera opcje anulacji wcześniej zakupionego i ewentualnie dokonuje zwrotu płatności.
+Podstawowy przebieg zdarzeń: użytkownik pomyślnie anuluje zakup biletu.
+Alternatywny przebieg zdarzeń: brak.
+Wyzwalacz: użytkownik wybiera opcje związaną ze zwrotami biletów.
+Wymagania wstępne: użytkownik musi mieć zakupiony bilet.
