@@ -1,0 +1,45 @@
+Przypadki użycia dla pracownika ( Rafał Sochacki)
+
+1.Tworzenie konta
+Aktorzy: pracownik.
+Opis: pracownik rejestruje swoje konto korzystając z odpowiedniego formularza.
+Podstawowy przebieg zdarzeń: pracownik wypełnia formularz dane w formularzu i za pomocą przycisku loguje się na swoje konto.
+Alternatywny przebieg zdarzeń: pracownik podał w formularzu dane, które nie przechodzą poprawnej walidacji, więc pracownik dostaje komunikat błędu i 
+konto nie jest tworzone.
+Wyzwalacz: pracownik wybiera opcje utworzenia na stronie.
+Wymagania wstępne: brak.
+
+2.Logowanie
+Aktorzy: Pracownik
+Opis: Za pomocą odpowiedniego formularza pracownik loguje się na konto pracownicze.
+Podstawowy przebieg zdarzeń: pracownik wpisuje prawidłowe dane w formularzu i za pomocą przycisku loguje się na swoje konto.
+Alternatywny przebieg zdarzeń: pracownik wpisuje nieprawidłowe dane i otrzymuje komunikat błędu.
+Wyzwalacz: pracownik wybiera opcje logowania na stronie.
+Wymagania wstępne: pracownik musi posiadać konto, żeby się na nie zalogować.
+
+3. sprzedaż biletu
+Aktorzy: Pracownik, klient
+Opis: Pracownik sprzedaje bilet na wybrany seans i miejsce przez klienta.
+Podstawowy przebieg zdarzeń: Pracownik wybiera wskazany przez klienta seans, oraz wybiera miejsce do usadzenia klienta oraz pobiera opłate za bilet. 
+Alternatywny przebieg zdarzeń: Miejsce wskazane przez klienta okazuje sie zajete, pracownik proponuje inne miejsce. Płatność zostaje odrzucona, brak
+ środków na koncie.
+Wyzwalacz: pracownik wybiera opcje sprzedaży biletu.
+Wymagania wstępne: Pracownik musi być zalogowany.
+
+4. sprzedaż art. spożwczych/napoi
+Aktorzy: Pracownik, klient
+Opis: Pracownik sprzedaje wybrana przez klienta art. spożywczy/napój.
+Podstawowy przebieg zdarzeń: Pracownik wybiera wskazane artykuły przez klienta, pobiera za nie opłate.
+Alternatywny przebieg zdarzeń: Brak wskazanego przez klienta artykułu spożywczego/napoju, pracownik poleca cos innego, lub realizuje zamównienie niekompletne.
+  Płatność zostaje odrzucona, brak środków na koncie.
+Wyzwalacz: pracownik wybiera opcje sprzedaży art. spożywczy/napój.
+Wymagania wstępne: Pracownik musi być zalogowany.
+
+5. Sprawdzanie grafiku
+Aktorzy: Pracownik
+Opis: Pracownik sprawdza grafik pracy.
+Podstawowy przebieg zdarzeń: Pracownik wchodzi w zakładke grafik, sprawdza grafik.
+Alternatywny przebieg zdarzeń: Administrator nie zmienił grafiku na dany miesiąc, pracownik zgłasza to administratorowi.
+Wyzwalacz: wejście w zakładke grafik.
+Wymagania wstępne: Pracownik musi być zalogowany, grafik musi być wstawiony przez administratora.
+
