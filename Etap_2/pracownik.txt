@@ -1,12 +1,11 @@
 Przypadki użycia dla pracownika ( Rafał Sochacki)
 
-1.Tworzenie konta
+1.Aktywacja konta
 Aktorzy: pracownik.
-Opis: pracownik rejestruje swoje konto korzystając z odpowiedniego formularza.
-Podstawowy przebieg zdarzeń: pracownik wypełnia formularz dane w formularzu i za pomocą przycisku loguje się na swoje konto.
-Alternatywny przebieg zdarzeń: pracownik podał w formularzu dane, które nie przechodzą poprawnej walidacji, więc pracownik dostaje komunikat błędu i 
-konto nie jest tworzone.
-Wyzwalacz: pracownik wybiera opcje utworzenia na stronie.
+Opis: pracownik aktywuje konto poprzez pierwsze zalogowanie na konto utworzone przez adminmistratora.
+Podstawowy przebieg zdarzeń: pracownik wykonuje pierwsze logowanie na swoje konto.
+Alternatywny przebieg zdarzeń: pracownik podał złe dane, administrator nie stworzył konta.
+Wyzwalacz: pracownik wybiera opcje logowania dla pracownika na stronie.
 Wymagania wstępne: brak.
 
 2.Logowanie
@@ -14,7 +13,7 @@ Aktorzy: Pracownik
 Opis: Za pomocą odpowiedniego formularza pracownik loguje się na konto pracownicze.
 Podstawowy przebieg zdarzeń: pracownik wpisuje prawidłowe dane w formularzu i za pomocą przycisku loguje się na swoje konto.
 Alternatywny przebieg zdarzeń: pracownik wpisuje nieprawidłowe dane i otrzymuje komunikat błędu.
-Wyzwalacz: pracownik wybiera opcje logowania na stronie.
+Wyzwalacz: pracownik wybiera opcje logowania dla pracownikana stronie.
 Wymagania wstępne: pracownik musi posiadać konto, żeby się na nie zalogować.
 
 3. sprzedaż biletu
