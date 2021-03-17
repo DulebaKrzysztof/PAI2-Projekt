@@ -1,0 +1,49 @@
+Piotr Czajkowski
+1. Nazwa przypadku u¿ycia: 
+	Dodanie seansu przez administratora
+1.1. Krótki opis:
+	Administrator dodaje seans do systemu.
+1.2 Aktorzy
+	Administrator
+1.3 Wyzwalacze
+	Przypadek u¿ycia rozpoczyna siê, gdy administrator wybierze opcjê "Dodawanie seansu" w panelu administracyjnym.
+	
+2. Przep³yw zdarzeñ
+2.1 Przep³yw podstawowy
+	1. Administrator wybiera opcjê "Dodawanie seansu"
+	2. Administrator wype³nia pola dotycz¹ce nazwy seansu
+	3. Administrator wybiera salê z dostêpnych w danej filii.
+	4. Administrator wybiera "Dodaj seans"
+	5. Administrator wybiera "Dane s¹ prawid³owe"
+	
+2.2 Przep³ywy alternatywne.
+	-Dana sala jest ju¿ w u¿yciu, wymagane wybranie innej sali
+	-Powrót do formy i poprawienie danych.
+3 Warunki pocz¹tkowe.
+	-Administrator musi byæ zalogowany na konto z odpowiednimi uprawnieniami
+4. Warunki koñcowe.
+	-Seans zosta³ dodany
+
+1. Nazwa przypadku u¿ycia: 
+	Usuniêcie seansu przez administratora.
+1.1. Krótki opis:
+	Administrator usuwa seans z systemu.
+1.2 Aktorzy
+	Administrator
+1.3 Wyzwalacze
+	Przypadek u¿ycia rozpoczyna siê, gdy administrator wybierze opcjê "Usuwanie seansu" w panelu administracyjnym.
+	
+2. Przep³yw zdarzeñ
+2.1 Przep³yw podstawowy
+	1. Administrator wybiera opcjê "Usuwanie seansu"
+	2. Administrator wybiera seans z listy.
+	3. Administrator wybiera "Usuñ seans"
+	4. Administrator potwierdza wybór.
+	
+2.2 Przep³ywy alternatywne.
+	-Wybrany seans ju¿ nie istnieje
+	-Wybór nie zosta³ potwierdzony.
+3 Warunki pocz¹tkowe.
+	-Administrator musi byæ zalogowany na konto z odpowiednimi uprawnieniami
+4. Warunki koñcowe.
+	-Usuniêcie seansu
