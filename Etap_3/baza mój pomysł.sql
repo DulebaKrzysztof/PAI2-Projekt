@@ -58,3 +58,9 @@ CREATE TABLE reservation(
     CONSTRAINT fk_ticket_reservation_id FOREIGN KEY (ticket_id) REFERENCES ticket(id),
     CONSTRAINT fk_user_reservation_id FOREIGN KEY (user_id) REFERENCES user(id)
 );
+
+CREATE TABLE snacks(
+    id INT NOT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    price INT NOT NULL
+ );
