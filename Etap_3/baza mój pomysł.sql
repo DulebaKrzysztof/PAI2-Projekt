@@ -46,13 +46,15 @@ CREATE TABLE ticket(
 
 CREATE TABLE reservation(
     id INT(10) NOT NULL PRIMARY KEY,
-    movie_id INT NOT NULL,
+    screening_id INT NOT NULL,
     auditorium_id INT NOT NULL,
+    seat_id INT NOT NULL,
     ticket_id INT NOT NULL,
     is_paid boolean NOT NULL,
     user_id INT,
-    CONSTRAINT fk_movie_reservation_id FOREIGN KEY (movie_id) REFERENCES movie(id),
+    CONSTRAINT fk_movie_screening_id FOREIGN KEY (screening_id) REFERENCES screening(id),
     CONSTRAINT fk_auditorium_reservation_id FOREIGN KEY (auditorium_id) REFERENCES auditorium(id),
+    CONSTRAINT fk_seat_reservation_id FOREIGN KEY (seat_id) REFERENCES seat(id),
     CONSTRAINT fk_ticket_reservation_id FOREIGN KEY (ticket_id) REFERENCES ticket(id),
     CONSTRAINT fk_user_reservation_id FOREIGN KEY (user_id) REFERENCES user(id)
 );
