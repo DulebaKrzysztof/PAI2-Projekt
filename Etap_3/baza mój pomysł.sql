@@ -52,7 +52,7 @@ CREATE TABLE reservation(
     ticket_id INT NOT NULL,
     is_paid boolean NOT NULL,
     user_id INT,
-    CONSTRAINT fk_movie_screening_id FOREIGN KEY (screening_id) REFERENCES screening(id),
+    CONSTRAINT fk_screening_reservation_id FOREIGN KEY (screening_id) REFERENCES screening(id),
     CONSTRAINT fk_auditorium_reservation_id FOREIGN KEY (auditorium_id) REFERENCES auditorium(id),
     CONSTRAINT fk_seat_reservation_id FOREIGN KEY (seat_id) REFERENCES seat(id),
     CONSTRAINT fk_ticket_reservation_id FOREIGN KEY (ticket_id) REFERENCES ticket(id),
