@@ -63,6 +63,30 @@ Przypadki użycia dla pracownika ( Rafał Sochacki)
 
 -------------------------------------------------------------------------------------------------------------------
 
+[ Niekoniecznie przypadek użycia dla Pracownika, bardziej jako pomysł funkcjonalności systemu ]
+
+1. Nazwa przypadku użycia: 
+	automatyczne aktualizowanie grafiku.
+1.1. Krótki opis:
+	System zbiera informacje na temat seansów i zmienia repertuar na przyszłe 2 tygodnie w taki
+	sposób, że filmy chętniej oglądane puszczane są częściej i w godzinach częściej odwiedzanych 
+	porzez klientów. Filmom z mniejszą oglądalnością zmiejsza sie ilosc seansów. 
+1.2 Aktorzy
+	
+1.3 Wyzwalacze
+	2 tygodnie po ustaleniu przez administratora repertuaru system proponuje zmiany.
+2. Przepływ zdarzeń
+	
+2.1 Przepływ podstawowy
+	1. Admninistrator na początku miesiąca ustala repertuar z wykupionych przez kino filmów.
+	2. Przez 2 tygodnie system zbiera informacje o seansach.
+	3. System na podstawie danych tworzy nowy repertuar na kolejne 2 tygodnie.
+2.2 przepływy alternatywne.
+
+3 Warunki początkowe.
+	Repertuar na początek miesiąca jest ustalony.
+4. Warunki końcowe.
+	Repertuar zostaje zaktualizowany przez system.
 
 
 
