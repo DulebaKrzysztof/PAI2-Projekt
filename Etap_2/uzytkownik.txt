@@ -1,41 +1,190 @@
 Przypadki użycia dla użytkownika (Krzysztof Dulęba)
 
-1.Logowanie
-Aktorzy: użytkownik niezalogowany.
-Opis: użytkownik niezalogowany loguje się na konto korzystając z odpowiedniego formularza.
-Podstawowy przebieg zdarzeń: użytkownik wpisuje prawidłowe dane w formularzu i za pomocą przycisku loguje się na swoje konto.
-Alternatywny przebieg zdarzeń: użytkownik wpisuje nieprawidłowe dane i otrzymuje komunikat błędu.
-Wyzwalacz: użytkownik wybiera opcje logowania na stronie.
-Wymagania wstępne: użytkownik musi posiadać konto, żeby się na nie zalogować.
+Nazwa przypadku użycia - Przeglądanie dostępnych seansów
+1.1.Krótki opis
+- Użytkownik zalogowany / użytkownik niezalogowany przechodzi do podstrony pozwalającej na przeglądanie danych o dostępnych seansach w kinie.
+1.2.Aktorzy:
+- użytkownik niezalogowany
+lub
+- użytkownik zalogowany
+1.3.Wyzwalacze
+- Użytkownik wybiera opcję przejścia do podstrony z seansami.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik przechodzi do podstrony zawierającej informacje o dostępnych seansach.
+- System wyświetla użytkownikowi informacje o dostępnych seansach.
+2.2.Przepływy alternatywne
+- Brak
+3.Warunki początkowe
+- Brak
+4.Warunki końcowe
+- Użytkownik otrzymał informacje o dostępnych seansach.
 
-2.Tworzenie konta
-Aktorzy: użytkownik niezalogowany.
-Opis: użytkownik niezalogowany rejestruje swoje konto korzystając z odpowiedniego formularza.
-Podstawowy przebieg zdarzeń: użytkownik wypełnia formularz dane w formularzu i za pomocą przycisku loguje się na swoje konto.
-Alternatywny przebieg zdarzeń: użytkownik podał w formularzu dane, które nie przechodzą poprawnej walidacji, więc użytkownik dostaje komunikat błędu i konto nie jest tworzone.
-Wyzwalacz: użytkownik wybiera opcje utworzenia na stronie.
-Wymagania wstępne: brak.
+Nazwa przypadku użycia – Wyświetlenie szczegółów o seansie.
+1.1.Krótki opis
+- Użytkownik zalogowany / użytkownik niezalogowany może wybrać jeden z dostępnych seansów aby wyświetlić szczegółowe informacje na jego temat (data premiery, produkcja, reżyseria, obsada, opis).
+1.2.Aktorzy:
+- użytkownik niezalogowany
+lub
+- użytkownik zalogowany
+1.3.Wyzwalacze
+- Użytkownik wybiera jeden z dostępnych seansów.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik wybiera interesujący go seans.
+- System wyświetla użytkownikowi informacje o wybranym seansie.
+2.2.Przepływy alternatywne
+- Brak
+3.Warunki początkowe
+- Brak
+4.Warunki końcowe
+- Użytkownik otrzymał informacje o wybranym seansie.
 
-3.Przeglądanie dostępnych seansów
-Aktorzy: użytkownik niezalogowany lub użytkownik zalogowany.
-Opis: użytkownik zalogowany / użytkownik niezalogowany przechodzi do podstrony pozwalającej na przeglądanie danych o dostępnych seansach w kinie.
-Podstawowy przebieg zdarzeń: użytkownik przechodzi do właściwej podstrony i pokazują mu się dostępne seanse.
-Alternatywny przebieg zdarzeń: brak.
-Wyzwalacz: użytkownik wybiera opcje przejścia do podstrony z seansami.
-Wymagania wstępne: brak.
+Nazwa przypadku użycia – Rezerwacja biletu
+1.1.Krótki opis
+- Użytkownik wybiera opcję zakupu biletu na interesujący go film. Użytkownik wybiera typ biletu, miejsce i termin z listy dostępnych terminów, po czym dokonuje rezerwacji.
+1.2.Aktorzy:
+- użytkownik zalogowany.
+1.3.Wyzwalacze
+- Użytkownik wybiera jeden z dostępnych seansów.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik wybiera interesujący go seans i przechodzi do podstrony pozwalającej na rezerwację biletu.
+- System wyświetla użytkownikowi formularz rezerwacji biletu.
+- Użytkownik podaje dane o typie biletu, miejscu, terminie i zatwierdza wybór.
+- System rejestruje informacje o rezerwacji i zwraca użytkownikowi informację o poprawnej rezerwacji.
+2.2.Przepływy alternatywne
+- Użytkownik wychodzi ze strony w trakcie wypełniania formularza. W tym przypadku żadne dane nie zostają zapisane i nie dochodzi do rezerwacji.
+3.Warunki początkowe
+- Użytkownik musi być zalogowany.
+4.Warunki końcowe
+- Użytkownik dokonał rezerwacji.
+- System posiada informacje o rezerwacji użytkownika.
 
-4.Zakup biletu
-Aktorzy: użytkownik zalogowany.
-Opis: użytkownik zalogowany wybiera opcje zakupu biletu na interesujący go seans, wypełnia wszystkie pola, wysyła formularz i płaci za bilet.
-Podstawowy przebieg zdarzeń: użytkownik pomyślnie dokonuje rezerwacji i opłaty biletu.
-Alternatywny przebieg zdarzeń: użytkownik dostaje informacje o błędzie i nie dochodzi do zakupu w momencie gdy nie ma już wolnych miejsc na dany seans.
-Wyzwalacz: użytkownik wybiera opcje związaną z zakupem biletu.
-Wymagania wstępne: brak.
+Nazwa przypadku użycia – Anulacja rezerwacji
+1.1.Krótki opis
+- Użytkownik wybiera opcję anulacji dokonanej wcześniej rezerwacji na jego koncie.
+1.2.Aktorzy:
+- użytkownik zalogowany.
+1.3.Wyzwalacze
+- Użytkownik wybiera jeden z dostępnych seansów.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik wybiera interesujący go seans i przechodzi do podstrony pozwalającej na rezerwację biletu.
+- System wyświetla użytkownikowi formularz rezerwacji biletu.
+- Użytkownik podaje dane o typie biletu, miejscu, terminie i zatwierdza wybór.
+- System rejestruje informacje o rezerwacji i zwraca użytkownikowi informację o poprawnej rezerwacji.
+2.2.Przepływy alternatywne
+- Użytkownik wychodzi ze strony w trakcie wypełniania formularza. W tym przypadku żadne dane nie zostają zapisane i nie dochodzi do rezerwacji.
+3.Warunki początkowe
+- Użytkownik musi być zalogowany.
+- Użytkownik musiał wcześniej dokonać rezerwacji, którą zamierza teraz anulować.
+- Anulacja rezerwacji może nastąpić maksymalnie 1 dzień przed danym seansem.
+4.Warunki końcowe
+- Użytkownik dokonał anulacji rezerwacji.
+- System zarejestrował anulację klienta.
 
-5.Anulacja zakupu biletu
-Aktorzy: użytkownik zalogowany.
-Opis: użytkownik zalogowany wybiera opcje anulacji wcześniej zakupionego i ewentualnie dokonuje zwrotu płatności.
-Podstawowy przebieg zdarzeń: użytkownik pomyślnie anuluje zakup biletu.
-Alternatywny przebieg zdarzeń: brak.
-Wyzwalacz: użytkownik wybiera opcje związaną ze zwrotami biletów.
-Wymagania wstępne: użytkownik musi mieć zakupiony bilet.
+Nazwa przypadku użycia – Wykonanie płatności
+1.1.Krótki opis
+- Użytkownik wybiera opcję wykonania płatności po zakupie biletu i dokonuje płatności w zewnętrznym systemie.
+1.2.Aktorzy:
+- użytkownik zalogowany.
+1.3.Wyzwalacze
+- Użytkownik wybiera opcję wykonania płatności.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik wybiera opcję wykonania płatności.
+- System przekierowuje użytkownika do systemu płatności.
+- Użytkownik podaje dokonuje płatności.
+- System otrzymuje informacje o dokonanej płatności.
+2.2.Przepływy alternatywne
+- Użytkownik wychodzi ze strony lub nie dokonuje płatności. W tym przypadku system zostanie o tym poinformowany.
+3.Warunki początkowe
+- Użytkownik musi być zalogowany.
+- Użytkownik musiał wcześniej dokonać rezerwacji, za którą zamierza zapłacić.
+4.Warunki końcowe
+- Użytkownik zapłacił za rezerwację.
+- System rejestruje informacje o dokonanej płatności przez użytkownika.
+
+Nazwa przypadku użycia – Wygenerowanie kodu QR
+1.1.Krótki opis
+- Użytkownik może wygenerować kod QR po zapłacie za rezerwację, która jest dowodem dokonania płatności.
+1.2.Aktorzy:
+- użytkownik zalogowany.
+1.3.Wyzwalacze
+- Użytkownik wybiera opcję wygenerowania kodu QR
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik wybiera opcję wykonania płatności.
+- System przekierowuje użytkownika do systemu płatności.
+- Użytkownik podaje dokonuje płatności.
+- System otrzymuje informacje o dokonanej płatności.
+2.2.Przepływy alternatywne
+- Użytkownik wychodzi ze strony lub nie dokonuje płatności. W tym przypadku system zostanie o tym poinformowany.
+3.Warunki początkowe
+- Użytkownik musi być zalogowany.
+- Rezerwacja musi być wykonana.
+- Rezerwacja musi być opłacona.
+4.Warunki końcowe
+- System wygenerował użytkownikowi kod QR.
+- Użytkownik otrzymuje kod QR.
+
+Nazwa przypadku użycia – Wyświetlenie cennika.
+1.1.Krótki opis
+- Użytkownik wybiera opcję sprawdzenia obowiązującego cennika. Cennik zawiera informacje o cenach w zależności od dnia tygodnia, typu biletu.
+1.2.Aktorzy:
+- użytkownik zalogowany
+lub
+- użytkownik niezalogowany
+1.3.Wyzwalacze
+- Użytkownik wybiera opcję przejścia do podstrony z cennikiem.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik przechodzi do podstrony z cennikiem.
+- System wyświetla użytkownikowi informacje o cenniku.
+2.2.Przepływy alternatywne
+- Brak.
+3.Warunki początkowe
+- Brak.
+4.Warunki końcowe
+- Użytkownik otrzymuje od systemu informacje o cenniku.
+
+Nazwa przypadku użycia - Logowanie
+1.1.Krótki opis
+- Użytkownik niezalogowany loguje się na konto korzystając z odpowiedniego formularza na odpowiedniej podstronie.
+1.2.Aktorzy:
+- użytkownik niezalogowany
+1.3.Wyzwalacze
+- Użytkownik wybrał na stronie opcję służącą do logowania się na konto.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik przechodzi do podstrony pozwalającej na logowanie.
+- System wyświetla użytkownikowi formularz logowania.
+- Użytkownik podaje swoje dane i zatwierdza je przyciskiem.
+- System weryfikuje poprawność podanych danych i zwraca odpowiedź.
+2.2.Przepływy alternatywne
+- Użytkownik podał nieprawidłowe dane w formularzu, więc otrzymał informacje o błędzie logowania.
+3.Warunki początkowe
+- Użytkownik musi posiadać konto.
+4.Warunki końcowe
+- Użytkownik został pomyślnie zalogowany na konto.
+
+Nazwa przypadku użycia - Tworzenie konta
+1.1.Krótki opis
+- Użytkownik niezalogowany rejestruje swoje konto korzystając z odpowiedniego formularza na odpowiedniej podstronie.
+1.2.Aktorzy:
+- użytkownik niezalogowany
+1.3.Wyzwalacze
+- Użytkownik wybrał na stronie opcję służącą do tworzenia konta.
+2.Przepływ zdarzeń
+2.1.Przepływ podstawowy
+- Użytkownik przechodzi do podstrony pozwalającej na tworzenie konta.
+- System wyświetla użytkownikowi formularz rejestracji konta.
+- Użytkownik podaje swoje dane i zatwierdza je przyciskiem.
+- System weryfikuje poprawność podanych danych i zwraca odpowiedź.
+2.2.Przepływy alternatywne
+- Użytkownik podał nieprawidłowe dane w formularzu, więc otrzymał informacje o błędzie tworzenia konta.
+3.Warunki początkowe
+- Brak
+4.Warunki końcowe
+- Użytkownik pomyślnie utworzył swoje konto. Dane o koncie zostały zarejestrowane w systemie.
