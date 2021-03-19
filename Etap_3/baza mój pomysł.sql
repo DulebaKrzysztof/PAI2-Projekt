@@ -45,7 +45,7 @@ CREATE TABLE ticket(
 );
 
 CREATE TABLE reservation(
-    id INT(10) NOT NULL PRIMARY KEY,
+    id INT NOT NULL PRIMARY KEY,
     screening_id INT NOT NULL,
     auditorium_id INT NOT NULL,
     seat_id INT NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE reservation(
 );
 
 CREATE TABLE snacks(
-    id INT NOT PRIMARY KEY,
+    id INT NOT NULL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     price INT NOT NULL
  );
