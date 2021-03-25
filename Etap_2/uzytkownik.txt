@@ -13,6 +13,7 @@ lub
 2.1.Przepływ podstawowy
 - Użytkownik przechodzi do podstrony zawierającej informacje o dostępnych seansach.
 - System wyświetla użytkownikowi informacje o dostępnych seansach.
+- Użytkownik opcjonalnie może wybrać dostępny seans i przejść do przypadku użycia "Wyświetlanie szczegółów o seansie".
 2.2.Przepływy alternatywne
 - Brak
 3.Warunki początkowe
@@ -33,6 +34,7 @@ lub
 2.1.Przepływ podstawowy
 - Użytkownik wybiera interesujący go seans.
 - System wyświetla użytkownikowi informacje o wybranym seansie.
+- Użytkownik opcjonalnie może rozpocząć rezerwację biletu i przejść do przypadku użycia "Rezerwacja biletu".
 2.2.Przepływy alternatywne
 - Brak
 3.Warunki początkowe
@@ -96,7 +98,7 @@ Nazwa przypadku użycia – Wykonanie płatności
 - Użytkownik wybiera opcję wykonania płatności.
 - System przekierowuje użytkownika do systemu płatności.
 - Użytkownik podaje dokonuje płatności.
-- System otrzymuje informacje o dokonanej płatności.
+- System otrzymuje informacje o dokonanej płatności i automatycznie przechodzi do przypadku użycia "Wygenerowanie kodu QR".
 2.2.Przepływy alternatywne
 - Użytkownik wychodzi ze strony lub nie dokonuje płatności. W tym przypadku system zostanie o tym poinformowany.
 3.Warunki początkowe
@@ -112,15 +114,13 @@ Nazwa przypadku użycia – Wygenerowanie kodu QR
 1.2.Aktorzy:
 - użytkownik zalogowany.
 1.3.Wyzwalacze
-- Użytkownik wybiera opcję wygenerowania kodu QR
+- Użytkownik opłacił rezerwację.
 2.Przepływ zdarzeń
 2.1.Przepływ podstawowy
-- Użytkownik wybiera opcję wykonania płatności.
-- System przekierowuje użytkownika do systemu płatności.
-- Użytkownik podaje dokonuje płatności.
-- System otrzymuje informacje o dokonanej płatności.
+- System generuje kod QR i wyświetla go użytkownikowi.
+- Użytkownik otrzymuje kod QR.
 2.2.Przepływy alternatywne
-- Użytkownik wychodzi ze strony lub nie dokonuje płatności. W tym przypadku system zostanie o tym poinformowany.
+- Brak.
 3.Warunki początkowe
 - Użytkownik musi być zalogowany.
 - Rezerwacja musi być wykonana.
