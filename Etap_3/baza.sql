@@ -17,14 +17,14 @@ DROP TABLE user;
 DROP TABLE user_type;
 
 CREATE TABLE user_type(
-	id INT NOT NULL,
+    id INT NOT NULL,
     user_type VARCHAR(50) NOT NULL,
-	PRIMARY KEY (id),
+    PRIMARY KEY (id),
     UNIQUE INDEX id_unique (id ASC)
 );
 
 CREATE TABLE user(
-	id INT NOT NULL,
+    id INT NOT NULL,
     login VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
@@ -95,7 +95,7 @@ CREATE TABLE invoice(
 CREATE TABLE online_reservation(
     id INT NOT NULL,
     user_id INT NOT NULL,
-	is_paid BOOLEAN NOT NULL DEFAULT 0,
+    is_paid BOOLEAN NOT NULL DEFAULT 0,
     is_canceled BOOLEAN NOT NULL DEFAULT 0,
     PRIMARY KEY (id),
     UNIQUE INDEX id_unique (id ASC),
@@ -128,7 +128,7 @@ CREATE TABLE snacks_type(
 
 CREATE TABLE snacks(
     id INT NOT NULL,
-	snacks_type_id INT NOT NULL,
+    snacks_type_id INT NOT NULL,
     invoice_id INT NOT NULL,
     PRIMARY KEY (id),
     UNIQUE INDEX id_unique (id ASC),
