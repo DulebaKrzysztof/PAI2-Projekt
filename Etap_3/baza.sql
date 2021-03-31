@@ -109,7 +109,9 @@ CREATE TABLE ticket_type(
 
 CREATE TABLE invoice(
     id INT NOT NULL PRIMARY KEY,
-    invoice_date DATE NOT NULL
+    invoice_date DATE NOT NULL,
+    employee_id INT NOT NULL,
+    CONSTRAINT fk_employee_invoice FOREIGN KEY (employee_id) REFERENCES employee(id)
 );
 
 CREATE TABLE online_reservation(
@@ -148,3 +150,13 @@ CREATE TABLE snacks(
     CONSTRAINT fk_snacks_type_snacks FOREIGN KEY (snacks_type_id) REFERENCES snacks_type(id),
     CONSTRAINT fk_invoice_snacks FOREIGN KEY (invoice_id) REFERENCES invoice(id)
 );
+
+INSERT INTO genre(id,genre) values(1,'comedy');
+INSERT INTO director(id,first_name,last_name) values(1,'john','smith');
+INSERT INTO actor(id,first_name,last_name) values(1,'john','wick');
+INSERT INTO actor(id,first_name,last_name) values(2,'keanu','reeves');
+INSERT INTO movie(id,title,genre_id,director_id,description,duration) values(1,'XD',1,1,'XDDDDD',100);
+INSERT INTO movie_actor(movie_id,actor_id) values(1,1);
+INSERT INTO movie_actor(movie_id,actor_id) values(1,2);
+
+select * from movie, movie_actor, actor where movie.id=movie_actor.movie_id and movie_actor.actor_id=actor.id;
