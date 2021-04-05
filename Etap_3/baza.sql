@@ -94,7 +94,7 @@ CREATE TABLE seat(
 
 CREATE TABLE screening(
     id INT NOT NULL PRIMARY KEY,
-    screening_date DATE NOT NULL,
+    screening_date DATETIME NOT NULL,
     movie_id INT NOT NULL,
     auditorium_id INT NOT NULL,
     CONSTRAINT fk_auditorium_screening FOREIGN KEY (auditorium_id) REFERENCES auditorium(id),
