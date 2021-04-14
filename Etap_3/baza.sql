@@ -8,11 +8,11 @@ DROP TABLE ticket_type;
 DROP TABLE screening;
 DROP TABLE seat;
 DROP TABLE auditorium;
-DROP TABLE movie_actor;
+DROP TABLE person_in_movie;
 DROP TABLE movie;
 DROP TABLE genre;
-DROP TABLE director;
-DROP TABLE actor;
+DROP TABLE person_type;
+DROP TABLE person;
 DROP TABLE snacks;
 DROP TABLE snacks_type;
 DROP TABLE invoice;
@@ -47,35 +47,34 @@ CREATE TABLE genre(
 	genre VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE director(
+CREATE TABLE person(
 	id INT NOT NULL PRIMARY KEY,
-    first_name VARCHAR(50) NOT NULL,
+	first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE actor(
+CREATE TABLE person_type(
 	id INT NOT NULL PRIMARY KEY,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL
+	type_name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE movie(
     id INT NOT NULL PRIMARY KEY,
     title VARCHAR(50) NOT NULL,
     genre_id INT NOT NULL,
-    director_id INT NOT NULL,
     description VARCHAR(255),
     duration VARCHAR(50),
-	CONSTRAINT fk_genre_movie FOREIGN KEY (genre_id) REFERENCES genre(id),
-    CONSTRAINT fk_director_movie FOREIGN KEY (director_id) REFERENCES director(id)
+	CONSTRAINT fk_genre_movie FOREIGN KEY (genre_id) REFERENCES genre(id)
 );
 
-CREATE TABLE movie_actor(
-	movie_id INT NOT NULL,
-    actor_id INT NOT NULL,
-    PRIMARY KEY (movie_id, actor_id),
-    CONSTRAINT fk_movie_actor_movie FOREIGN KEY (movie_id) REFERENCES movie(id),
-    CONSTRAINT fk_movie_actor_actor FOREIGN KEY (actor_id) REFERENCES actor(id)
+CREATE TABLE person_in_movie(
+	id INT NOT NULL PRIMARY KEY,
+	person_id INT NOT NULL,
+    person_type_id INT NOT NULL,
+    movie_id INT NOT NULL,
+	CONSTRAINT fk_person_in_movie_person_id FOREIGN KEY (person_id) REFERENCES person(id),
+    CONSTRAINT fk_person_in_movie_person_type_id FOREIGN KEY (person_type_id) REFERENCES person_type(id),
+    CONSTRAINT fk_person_in_movie_movie FOREIGN KEY (movie_id) REFERENCES movie(id)
 );
 
 CREATE TABLE auditorium(
@@ -94,7 +93,7 @@ CREATE TABLE seat(
 
 CREATE TABLE screening(
     id INT NOT NULL PRIMARY KEY,
-    screening_date DATETIME NOT NULL,
+    screening_date DATE NOT NULL,
     movie_id INT NOT NULL,
     auditorium_id INT NOT NULL,
     CONSTRAINT fk_auditorium_screening FOREIGN KEY (auditorium_id) REFERENCES auditorium(id),
