@@ -1,0 +1,98 @@
+
+.sell{
+    border: solid 2px DodgerBlue;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+
+}
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin: 10px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .buy-ticket{
+    display: inline;
+    border: 2px solid DodgerBlue ;
+    background: DodgerBlue;
+    color: ffffff;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    
+}
+.buy-ticket:hover{
+    background: rgb(118, 186, 255);
+    color: var(--dark);
+}
+
+.timepicker label{
+    color: rgb(41, 41, 41);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.timepicker input{
+    background: DodgerBlue;
+    border: 2px solid DodgerBlue ;
+    color: rgb(41, 41, 41);
+}
