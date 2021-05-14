@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workers</title>
+        <link rel="stylesheet" href="styles-workers.css">
+    </head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li> <a href="workers.html">Pracownik</a></li>
+                <li> <a href="workers-admin.html">Administrator</a></li>
+            </ul>
+        </nav>
+
+        
+    <section class="tasks">
+        <h2>Sprzedaż biletów stacjonarnie</h2>
+        <div class="timepicker">
+                <label for="start">Data seansu:</label>
+
+            <input type="date" id="start" name="trip-start"
+                value="2021-04-10"
+                min="2021-04-10" max="2021-06-10">
+        </div>
+
+        <div class="custom-select">
+            <label> Godzina: </label>
+            <select>
+            <option value="0">Wybierz godzine:</option>
+            <option value="1">10:00</option>
+            <option value="2">12:00</option>
+            <option value="3">14:00</option>
+            <option value="4">16:00</option>
+            </select>
+        </div>
+
+        <div class="custom-select">
+            <label> Film: </label>
+            <select>
+            <option value="0">Wybierz film:</option>
+            <option value="1">King kong</option>
+            <option value="2">Whiplash</option>
+            <option value="3">Gladiator</option>
+            <option value="4">Joker</option>
+            </select>
+        </div>
+
+        <div class="custom-select" ">
+            <label> Miejsce: </label>
+            <select>
+            <option value="0">Wybierz miejsce:</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="1">5</option>
+            <option value="2">6</option>
+            <option value="3">7</option>
+            <option value="4">8</option>
+            </select>
+        </div>
+
+        <div class="custom-select">
+            <label> Rabat: </label>
+            <select>
+            <option value="0">Wybierz rabat</option>
+            <option value="1">uczen/student</option>
+            <option value="2">senior</option>
+            <option value="3">tani wtorek</option>
+            <option value="4">brak</option>
+            </select>
+        </div>
+
+        <button onclick="openWin()" class="buy-ticket">podsumowanie</button>
+            
+        </section>
+
+        <section class="tasks">
+            <h2>Sprzedaż przekąsek</h2>
+
+            <div class="custom-select" style="width:200px;">
+                <select>
+                <option value="0">Wybierz przekąskę:</option>
+                <option value="1">Popcorn</option>
+                <option value="2">nachos</option>
+                <option value="3">coca cola</option>
+                <option value="4">woda</option>
+                </select>
+            </div>
+            <input type="text" class="snacks-count" placeholder="ilośc">
+            <button onclick="" class="buy-ticket">dodaj</button>
+            <button onclick="openWin()" class="buy-ticket">podsumowanie</button>
+        </section>
+    </div>
+
+    <script>
+        let myWindow;
+        
+        function openWin() {
+          myWindow = window.open("/webpages/buy-ticket.html", "", "width=500, height=500");
+        }
+        
+        function resizeWin() {
+          myWindow.resizeTo(250, 250);
+          myWindow.focus();
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Repertuar</title>
+        <link rel="stylesheet" href="styles_webpages.css">
+    </head>
+
+<body>
+    <div class="wrapper">
+        <!-- navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li> <a href="../index.html">Strona główna</a></li>
+                <li> <a href="Cennik.html">Cennik</a></li>
+                <li> <a href="promocje.html">Promocje</a></li>
+                <li> <a href="wydarzenia.html">Wydarzenia</a></li>
+            </ul>
+        </nav>
+        
+        <div class="timepicker">
+            <label for="start">Data seansu:</label>
+
+        <input type="date" id="start" name="trip-start"
+       value="2021-04-10"
+       min="2021-04-10" max="2021-06-10">
+        </div>
+
+        <div class="repertuar">
+            <ul>
+                <li class="np">10:00 <a href="#">King kong</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="pp">11:00 <a href="#">Whiplash</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="np">12:00 <a href="#">King kong</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="pp">13:00 <a href="#">Gladiator</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="np">14:00 <a href="#">Whiplash</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="pp">15:00 <a href="#">Gladiator</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="np">16:00 <a href="#">King kong</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="pp">17:00 <a href="#">Whiplash</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="np">18:00 <a href="#">King kong</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+                <li class="pp">19:00 <a href="#">Gladiator</a> <button onclick="openWin()" class="buy-ticket">Kup bilet</button></li>
+            </ul>
+        </div>
+
+        <script>
+            var myWindow;
+            
+            function openWin() {
+              myWindow = window.open("buy-ticket.html", "", "width=500, height=500");
+            }
+            
+            function resizeWin() {
+              myWindow.resizeTo(250, 250);
+              myWindow.focus();
+            }
+            </script>
+        
+            <!--Footer-->
+            <footer>
+                <p>FOOTER COPYRIGHT &copy; 2021 </p>
+            </footer>
+            
+    </div>
+    <!-- wrapper ends -->
+</body>
+
+</html>
+    
