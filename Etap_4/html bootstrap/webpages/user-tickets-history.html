@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Strona główna</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">Ciinema</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="repertuar.html">Repertuar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="prices.html">Cennik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Wydarzenia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="special-offers.html">Promocje</a>
+          </li>
+        </ul>
+        <form action="register.html" class="form-inline my-2 my-lg-0">
+          <button class="btn btn-primary m-2 my-2 my-sm-0 visibility" type="submit"
+            value="register">Rejestracja</button>
+        </form>
+        <form action="login.html" class="form-inline my-2 my-lg-0">
+          <button class="btn btn-primary  my-2 my-sm-0 visibility" type="submit" value="login">Logowanie</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <section id="showcase" class="showcase">
+    <h1>Ciinema</h1>
+    <p>Witaj na stronie kina Ciinema! Zapoznaj się z ofertą naszego kina.</p>
+    <a href="about.html" class="btn btn-info">Przeczytaj więcej</a>
+  </section>
+
+  <section id="news">
+    <div class="row my-3">
+      <div class="col-sm-3 d-flex">
+        <div class="card bg-info">
+          <div class="card-body">
+            <h5 class="card-title">Niższe ceny!</h5>
+            <p class="card-text">KINOWE EMOCJE W NIŻSZEJ CENIE | Bilety już od 14,90 zł</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 d-flex">
+        <div class="card bg-info">
+          <div class="card-body">
+            <h5 class="card-title">Mniej widowni!</h5>
+            <p class="card-text">Zmniejszenie liczby widowni do 25% w Kinie w Kielcach</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 d-flex">
+        <div class="card bg-info">
+          <div class="card-body">
+            <h5 class="card-title">Nowe wytyczne!</h5>
+            <p class="card-text">Przypominamy, że zgodnie z rządowymi wytycznymi widzowie na terenie kina powinni mieć
+              zakryte usta i nos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 d-flex">
+        <div class="card bg-info">
+          <div class="card-body">
+            <h5 class="card-title">Uwaga!</h5>
+            <p class="card-text">Nasze kina wyposażyliśmy w specjalne oznakowania graficzne ułatwiające zachowanie
+              dystansu między klientami w kolejkach</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="main-content" class="card bg-light">
+
+    <div class="card-header text-center">
+      <h2>Zarezerwowane seanse</h2>
+    </div>
+
+    <div class="card-body">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th scope="col">Nazwa seansu</th>
+            <th scope="col">Data</th>
+            <th scope="col">Godzina</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Whiplash</th>
+            <td>2021-05-10</td>
+            <td>10:00</td>
+            <td>Anulowano</td>
+          </tr>
+          <tr>
+            <th scope="row">King kong</th>
+            <td>2021-05-10</td>
+            <td>16:00</td>
+            <td>Zakończono</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <footer class="text-center text-lg-start bg-dark text-white p-3">
+    CIINEMA &copy; 2021
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
